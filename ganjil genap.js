@@ -1,4 +1,4 @@
-let platnomor = "D 4567 AB";
+let platnomor = "[D 4567 AB]";
 let tanggal = 9;
 
 let angkaPlat = parseInt(platnomor.split(" ")[1]);
