@@ -3,14 +3,27 @@ let tanggal = 9;
 
 let angkaPlat = parseInt(platnomor.split(" ")[1]);
 
-if (tanggal % 2 === 0) {
-  console.log("Tanggal genap");
-} else {
-  console.log("Tanggal ganjil");
+switch (true) {
+  case tanggal % 2 === 0:
+    console.log("Tanggal genap");
+    break;
+  default:
+    console.log("Tanggal ganjil");
+    break;
 }
-
-if (angkaPlat % 2 === 0) {
-  console.log("Plat nomor genap");
-} else {
-  console.log("Plat nomor ganjil");
+switch (true) {
+  case angkaPlat % 2 === 0:
+    console.log("Plat nomor genap");
+    break;
+  default:
+    console.log("Plat nomor ganjil");
+    break;
+}
+switch (true) {
+  case (tanggal % 2 === 0 && angkaPlat % 2 === 0 || tanggal % 2 !== 0 && angkaPlat % 2 !== 0):
+    console.log("Kendaraan boleh lanjut");
+    break;
+  default:
+    console.log("Kendaraan di tilang");
+    break;
 }
